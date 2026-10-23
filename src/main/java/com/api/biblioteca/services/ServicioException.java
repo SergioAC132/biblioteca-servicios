@@ -9,5 +9,10 @@ public class ServicioException extends RuntimeException {
         this.codigo = codigo;
     }
 
+    public ServicioException(CodigoError codigo, String mensaje) {
+        super(mensaje);
+        this.codigo = codigo;
+    }
+
     public CodigoError getCodigo() { return codigo; }
 }
